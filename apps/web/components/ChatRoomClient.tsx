@@ -29,9 +29,8 @@ export function ChatRoomClient({
             }
         }
     }, [socket, loading, id])
-
     return <div>
-        {messages.map(m => <div>{m.message}</div>)}
+        {chats.map((m, index) => <div key={index}>{m.message}</div>)}
 
         <input type="text" value={currentMessage} onChange={e => {
             setCurrentMessage(e.target.value);
