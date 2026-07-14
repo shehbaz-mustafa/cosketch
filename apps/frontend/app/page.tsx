@@ -99,7 +99,7 @@ export default function App() {
 
           {/* Right actions */}
           <div className="hidden md:flex items-center gap-3">
-          <Link href={"/signin"}> 
+          <Link href={""}> 
             <button  className="btn-orange-sm">
               <Pencil className="w-3.5 h-3.5" />
               Start drawing
@@ -369,16 +369,7 @@ export default function App() {
           <h2 className="font-sketch mb-6" style={{ fontSize: 'clamp(42px, 8vw, 80px)', lineHeight: 1.1, color: 'var(--text)' }}>
             Start your first sketch.
           </h2>
-          <p className="text-base mb-10" style={{ color: 'var(--muted)' }}>
-            Just open and draw.
-          </p>
-          <Link href={"/signin"}>
-          
-          <button className="btn-orange text-lg px-10 py-4">
-            <Pencil className="w-5 h-5" />
-            Sign in
-          </button>
-          </Link>
+         
           <p className="mt-4 text-sm" style={{ color: 'var(--muted)' }}>Works in your browser. Always free for individuals.</p>
         </div>
       </section>
